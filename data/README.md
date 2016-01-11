@@ -14,18 +14,18 @@ This data was collected (c. 2012) through on interactive online personality test
 ## Variables:
 
 - race: Chosen from a drop down menu. 
-    1 = Mixed Race, 
-    2 = Arctic (Siberian, Eskimo), 
-    3 = Caucasian (European), 
-    4 = Caucasian (Indian), 
-    5 = Caucasian (Middle East), 
-    6 = Caucasian (North African, Other), 
-    7 = Indigenous Australian, 
-    8 = Native American, 
-    9 = North East Asian (Mongol, Tibetan, Korean Japanese, etc), 
-    10 = Pacific (Polynesian, Micronesian, etc), 
-    11 = South East Asian (Chinese, Thai, Malay, Filipino, etc), 
-    12 = West African, Bushmen, Ethiopian, 13=Other (0=missed)
+    + 1 = Mixed Race, 
+    + 2 = Arctic (Siberian, Eskimo), 
+    + 3 = Caucasian (European), 
+    + 4 = Caucasian (Indian), 
+    + 5 = Caucasian (Middle East), 
+    + 6 = Caucasian (North African, Other), 
+    + 7 = Indigenous Australian, 
+    + 8 = Native American, 
+    + 9 = North East Asian (Mongol, Tibetan, Korean Japanese, etc), 
+    + 10 = Pacific (Polynesian, Micronesian, etc), 
+    + 11 = South East Asian (Chinese, Thai, Malay, Filipino, etc), 
+    + 12 = West African, Bushmen, Ethiopian, 13=Other (0=missed)
 
 - age: Entered as text (individuals reporting age < 13 were not recorded)
 
