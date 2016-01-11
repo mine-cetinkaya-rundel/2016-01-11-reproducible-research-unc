@@ -34,35 +34,15 @@ easier to discover issues.
 <font size="3">Source: http://news.sciencemag.org/policy/2015/05/science-retracts-gay-marriage-paper-without-lead-author-s-consent</font>
 
 
-## Seizure study retracted after authors realize data got "terribly mixed"
-
-From the authors of **Low Dose Lidocaine for Refractory Seizures in 
-Preterm Neonates**:
-
-*"The article has been retracted at the request of the authors. After 
-carefully re-examining the data presented in the article, they identified 
-that data of two different hospitals got terribly mixed. The published 
-results cannot be reproduced in accordance with scientific and clinical 
-correctness."*
-
-<br><br><br><br>
-
-<font size="3">Source: http://retractionwatch.com/2013/02/01/seizure-study-retracted-after-authors-realize-data-got-terribly-mixed/</font>
-
-
 ## Bad spreadsheet merge kills depression paper, quick fix resurrects it
-
-- The authors informed the journal that the merge of lab results and other 
-survey data used in the paper resulted in an error regarding the 
-identification codes. Results of the analyses were based on the data set 
-in which this error occurred. Further analyses established the results 
-reported in this manuscript and interpretation of the data are not correct.
 
 - **Original conclusion:** Lower levels of CSF IL-6 were associated with 
 current depression and with future depression [...].
 
 - **Revised conclusion:** Higher levels of CSF IL-6 and IL-8 were 
 associated with current depression [...].
+
+<br><br><br><br>
 
 <font size="3">Source: http://retractionwatch.com/2014/07/01/bad-spreadsheet-merge-kills-depression-paper-quick-fix-resurrects-it/</font>
 
@@ -83,7 +63,7 @@ associated with current depression [...].
 
 - "[...] research is becoming increasingly complex, with greater calls for transdisciplinary collaborations, “big data,” and more sophisticated research questions and methods [...] data sets often have multiple files that require merging, change the wording of questions over time, provide incomplete codebooks, and have unclear and sometimes duplicative variables."
 
-- "Given these issues, I would not be surprised if coding errors were fairly common, and that the ones discovered constitute only the "tip of the iceberg."
+- "Given these issues, I would not be surprised if coding errors were fairly common [...]"
 
 <br><br>
 
@@ -157,8 +137,6 @@ inseparable
 
 3. Version control $\rightarrow$ Git / GitHub
 
-4. Other considerations
-
 
 # 1. Scriptability
 
@@ -182,7 +160,7 @@ inseparable
 - Widely used and supported across all disciplines
 - Can be used on Windows, Mac OS X, or Linux
 
-![RSplashScreen](img/RSplashScreen.png)
+![RSplashScreen](img/RSplash.png)
 </div>
 
 
@@ -234,26 +212,14 @@ informal methods that reinforce each other."
 With RStudio you can combine your programming and your documentation
 
 <div class="columns-2">
-- RStudio gives you a single environment to combine your documentation and your
+- Gives you a single environment to combine your documentation and your
 analysis
-- It runs on top of R
-- Gives you a bunch of really cool features that we'll explore throughout the
-workshop
+- Runs on top of R
+
 
 ![RSplashScreen](img/RStudioSplash.png)
 </div>
 
-## Anatomy of RStudio
-
-<div class="columns-2">
-- Left: Console
-    - Text on top at launch: version of R that you’re running
-    - Below that is the prompt
-- Upper right: Workspace and command history
-- Lower right: Plots, access to files, help, packages, data viewer
-
-![RSplashScreen](img/RStudioSplash.png)
-</div>
 
 ## What is Markdown?
 
@@ -297,6 +263,10 @@ big5 <- read.delim("raw-data/big5.txt") %>%
   tbl_df() # for formatting
 ```
 
+<br><br><br><br><br><br><br><br><br>
+
+<font size="3">Source: http://personality-testing.info/_rawdata/</font>
+
 ## View data {.smaller}
 ```{r}
 big5
@@ -304,11 +274,13 @@ big5
 
 ## Clean data
 
-You can include script files in your R Markdown document:
+You can include script files in your R Markdown document
 
 ```{r message=FALSE}
 source("code/01-data-cleanup.R")
 ```
+
+<img src="img/script.png" alt="script" style="width:600px">
 
 ## View distribution of age {.smaller}
 
@@ -400,79 +372,55 @@ Everytime you make a save, you zip the entire directory that your project files 
 ## Best - Version Control
 
 <center>
-<img src="img/motivation-01.png" width="700px" />
+<img src="img/repo.png" width="600px" />
 </center>
 
-<br><br><br>
+<font size="3">Source: https://github.com/mine-cetinkaya-rundel/2016-01-11-reproducible-research-unc/.</font>
 
-<font size="3">From Code for RNeXML R package, plus RNeXML publication in RMarkdown, [https://github.com/ropensci/RNeXML](https://github.com/ropensci/RNeXML).</font>
+## How does a version control system work? {.smaller}
 
-## How does a version control system work?
+- Start with a base version of the document, save just the changes you made at each step of the way.
 
-## 
-
-- Version control systems start with a base version of the document and then save just
-the changes you made at each step of the way.
-
-- You can think of it as a tape: if you rewind the tape and start at the base document, then you can play back each change and end up with your latest version.
+- Think of it as a tape: if you rewind the tape and start at the base document, then you can play back each change and end up with your latest version.
 
 <center>
-<img src="img/play-changes.png" width="700px" />
+<img src="img/play-changes.png" width="400px" />
 </center>
 
-<br><br>
-
-From [Software Carpentry](https://software-carpentry.org/).
-
-
-## 
-
-- You can then think about "playing back" different sets of changes onto the base document and getting different versions of the document.
+- "Playing back" different sets of changes onto the base document and getting different versions of the document.
 
 <center>
-<img src="img/merge.png" height="300px" />
+<img src="img/merge.png" height="200px" />
 </center>
 
-<br><br>
+<font size="3">Source: [Software Carpentry](https://software-carpentry.org/).</font>
 
-From [Software Carpentry](https://software-carpentry.org/).
+## Git/GitHub
 
-
-## Git for version control
-
-- Makes you fearless
 - Easy to set up
-- Allows you to take a snapshot of every stage of your project history
-- Takes up minimal space
-- Creates a easy navigatable map to the history of all changes made
-
 - Integrated with RStudio
-
-## Features of using a Hosting Service Like Github
-
-- Backup of your project
-- No need for a server: easy to set up
 - GitHub's strong community: your colleagues are probably already there
 - Provides tools to help enhance collaboration
 - A common location to share your work
 
+## Commits
 
+<center>
+<img src="img/commits.png" width="800px" />
+</center>
+
+## Diff
+
+<center>
+<img src="img/diff.png" width="900px" />
+</center>
 
 # Parting remarks
 
-## Parting remarks
-
-- Everyone struggles with reproducibility and it is a hindrance to moving 
-science forward
-
-- Evan with a fairly simple analysis challenges were faced in four main areas:
-organization, documentation, automation, and dissemination
-
-- Over the two day workshop, data analysis tasks will become more complex as we 
-gather more data and ask more complicated questions, so we need better tools and 
-workflows to combat issues arising in these areas
-
 ## Two-pronged approach
+
+Everyone struggles with reproducibility and it is a hindrance to moving 
+science forward.
 
 <div class="columns-2">
 \#1 
@@ -486,3 +434,15 @@ Train new researchers who don’t have any other workflow
 ![two prongs](img/two-pronged-fork.jpg)
 
 </div>
+
+## Resources
+
+- Slides and repository for this talk: https://github.com/mine-cetinkaya-rundel/2016-01-11-reproducible-research-unc/
+
+- R Markdown: http://rmarkdown.rstudio.com/
+
+- RStudio and git: https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN
+
+- Try Git: https://try.github.io
+
+
