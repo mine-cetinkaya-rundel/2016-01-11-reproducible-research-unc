@@ -321,12 +321,12 @@ ggplot(big5, aes(x = age)) +
 summary(big5$age)
 ```
 
-## Regress extraversion vs. neuroticism and gender {.smaller}
+## Regress extraversion vs. agreeableness and gender {.smaller}
 
 **Extraversion:** Seeking fulfillment from sources outside the self or in community. High scorers are social, low scorers prefer to work alone. **Neuroticism:** Being emotional.
 
 ```{r message=FALSE}
-m_ext_age <- lm(extraversion ~ neuroticism * gender, data = big5)
+m_ext_age <- lm(extraversion ~ agreeableness * gender, data = big5)
 summary(m_ext_age)
 ```
 
