@@ -445,4 +445,4 @@ Train new researchers who don’t have any other workflow
 
 - Try Git: https://try.github.io
 
-
+- Reproducible Science Curriculum (2 day workshop): https://github.com/Reproducible-Science-Curriculum/
