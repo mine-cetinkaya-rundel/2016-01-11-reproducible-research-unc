@@ -11,7 +11,7 @@ These data come from http://personality-testing.info/_rawdata/.
 
 This data was collected (c. 2012) through on interactive online personality test. Participants were informed that their responses would be recorded and used for research at the beginning of the test and asked to confirm their consent at the end of the test.
 
-## Variables:
+## Codebook
 
 - `race`: Chosen from a drop down menu. 
     + 1 = Mixed Race
