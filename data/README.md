@@ -57,7 +57,7 @@ This data was collected (c. 2012) through on interactive online personality test
 
 - `country`: The participant's technical location. ISO country code.
 
-- The following items were rated on a five point scale where 1=Disagree, 3=Neutral, 5=Agree (0=missed). All were presented on one page in the order E1, N2, A1, C1, O1, E2, ...
+- The following items were rated on a five point scale where 1 = Disagree, 3 = Neutral, 5 = Agree (0=missed). All were presented on one page in the order E1, N2, A1, C1, O1, E2, ...
     + `E1`: I am the life of the party.
     + `E2`: I don't talk a lot.
     + `E3`: I feel comfortable around people.
