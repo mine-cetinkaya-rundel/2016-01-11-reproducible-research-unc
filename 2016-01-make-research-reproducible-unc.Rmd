@@ -19,7 +19,7 @@ options(show.signif.stars=FALSE)
 ## Science retracts gay marriage paper without agreement of lead author LaCour
 
 - In May 2015 Science retracted a study of how canvassers can sway 
-people's opinions about gay marriage published just 5 months ago.
+people's opinions about gay marriage published just 5 months earlier.
 
 - Science Editor-in-Chief Marcia McNutt: Original survey data not made 
 available for independent reproduction of results. + Survey incentives 
@@ -42,7 +42,7 @@ current depression and with future depression [...].
 - **Revised conclusion:** Higher levels of CSF IL-6 and IL-8 were 
 associated with current depression [...].
 
-<br><br><br><br>
+<br><br><br><br><br>
 
 <font size="3">Source: http://retractionwatch.com/2014/07/01/bad-spreadsheet-merge-kills-depression-paper-quick-fix-resurrects-it/</font>
 
@@ -86,7 +86,7 @@ associated with current depression [...].
 
 <font size="3">Source: Karl Broman</font>
 
-## 
+## No collaborators?
 
 <br><br><br><br>
 
@@ -159,6 +159,7 @@ inseparable
 - Open source
 - Widely used and supported across all disciplines
 - Can be used on Windows, Mac OS X, or Linux
+- Thousands of statistical data analysis packages
 
 ![RSplashScreen](img/RSplash.png)
 </div>
@@ -178,22 +179,23 @@ document your analysis
 ## Once in R
 
 <div class="columns-2">
-You could just type into the command prompt...
+You could just type into the command prompt, but that doesn't help much with
 
-- ... but that doesn't help much with documentation
+- documentation
 
-- ... but that doesn't help much with automation
+or
+
+- automation
 
 ![RSplash](img/RSplash.png)
 </div>
 
 
-## 2. Literate programming
+# 2. Literate programming
 
 ## Donald Knuth "Literate Programming (1983)"
 
-"Let us change our traditional attitude to the construction of programs: 
-Instead of imagining that our main task is to instruct a *computer* what 
+"Instead of imagining that our main task is to instruct a *computer* what 
 to do, let us concentrate rather on explaining to *human beings* what we 
 want a computer to do."
 
@@ -240,32 +242,52 @@ friendly) markup language for creating pdf documents.
     + Once you have the basics down, you can get fancy and add HTML,
     JavaScript, and CSS.
 
+## Sample Markdown document
+
+<img src="img/markdown.png" alt="markdown" style="width:900px">
+
 ## What is R Markdown?
 
-Well, it's R + Markdown
+Well, it's R + Markdown:
 
 - Ease of Markdown syntax
 
 - Rendering of R code to produce output and plots
 
-## R Markdown: syntax
+## Sample R Markdown document
 
-<img src="img/rmarkdown_text.png" alt="rmarkdown_text" style="width:900px">
+<img src="img/rmarkdown.png" alt="rmarkdown" style="width:1000px">
 
-## R Markdown: code
+## Another R Markdown document
 
-<img src="img/rmarkdown_code.png" alt="rmarkdown_code" style="width:1000px">
+<br><br><br><br>
+
+<center>
+This presentation!
+</center>
+
+<br><br><br><br>
 
 ## Example: Big Five Personality Test
+
+The Big Five personality traits is a theory of five broad dimensions used by some psychologists to describe the human personality and psyche: openness to experience, conscientiousness, extraversion, agreeableness, and neuroticism. 
+
+<br><br>
+
+Load data with an **R chunk**:
 
 ```{r}
 big5 <- read.delim("raw-data/big5.txt") %>%
   tbl_df() # for formatting
 ```
 
-<br><br><br><br><br><br><br><br><br>
+<br><br>
 
-<font size="3">Source: http://personality-testing.info/_rawdata/</font>
+<font size="3">Sources: [Wikipedia](https://en.wikipedia.org/wiki/Big_Five_personality_traits) and http://personality-testing.info/_rawdata/.</font>
+
+## Under the hood
+
+<img src="img/rchunk.png" alt="rchunk" style="width:900px">
 
 ## View data {.smaller}
 ```{r}
